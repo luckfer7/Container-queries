@@ -1,0 +1,79 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container {
+    width: 90%;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 8px;
+}
+
+.caixa-amarela {
+    width: 24%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.caixa-vermelha {
+    width: 24%;
+    height: 100%;
+    background-color: red;
+}
+
+.caixa-azul {
+    width: 24%;
+    height: 100%;
+    background-color: blue;
+}
+
+.caixa-verde {
+    width: 24%;
+    height: 100%;
+    background-color: green;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        flex-direction: column;
+
+    }
+} */
+
+
+.card-container {
+    container-type: inline-size;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 16px;
+}
+
+.card {
+    display: block;
+    border: 1px solid #aaa;
+    padding: 8px;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+/* Container Query */
+@container (min-width: 300px) {
+    .card {
+        display: flex;
+        gap: 16px;
+    }
+} 
